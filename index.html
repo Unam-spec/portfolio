@@ -1,0 +1,1859 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNAM — Content Creator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Barlow+Condensed:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============================================================
+  ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗
+  ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
+  ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+  ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+  ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+   ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
+
+  PORTFOLIO CONFIG — EDIT EVERYTHING HERE
+  All your details live in this one block.
+  No need to search the rest of the file.
+  ============================================================ -->
+    <script>
+      const CONFIG = {
+        // ── PERSONAL ──────────────────────────────────────────────
+        name: "Unam Matheatau",
+        tagline: "Faith · Discipline · Culture · Tech · Wellness",
+        location: "Johannesburg, ZA",
+        age: "21",
+        email: "unam.hii@gmail.com",
+
+        // ── SOCIAL HANDLES ────────────────────────────────────────
+        tiktok: { handle: "@unam_.hii", url: "https://tiktok.com/@unam_.hii" },
+        instagram: {
+          handle: "@unam_.m",
+          url: "https://www.instagram.com/unam_.m/",
+        },
+
+        // ── STATS ─────────────────────────────────────────────────
+        stats: [
+          { platform: "TikTok · @unam_.hii", value: "6K", label: "Followers" },
+          {
+            platform: "TikTok · avg per video",
+            value: "1K",
+            label: "Avg. Views",
+          },
+          {
+            platform: "TikTok · avg per video",
+            value: "16.12%",
+            label: "Viral Rate",
+          },
+          {
+            platform: "TikTok · avg per video",
+            value: "13.14%",
+            label: "Engagement Rate",
+          },
+          { platform: "Instagram · @unam_.m", value: "5K", label: "Followers" },
+          {
+            platform: "Instagram · avg per post",
+            value: "11K",
+            label: "Avg. Reach",
+          },
+          {
+            platform: "Instagram · avg per post",
+            value: "2.1K",
+            label: "Avg. Engagements",
+          },
+          {
+            platform: "Instagram · avg per post",
+            value: "11.37%",
+            label: "Engagement Rate",
+          },
+        ],
+
+        // ── CONTENT PILLARS ───────────────────────────────────────
+        pillars: [
+          {
+            num: "01",
+            title: "Faith",
+            desc: "The foundation. Honest reflections on living with purpose, staying grounded, and building with God at the centre.",
+          },
+          {
+            num: "02",
+            title: "Discipline",
+            desc: "Morning routines, habits, the grind behind the goals. Content for young people serious about becoming who they're meant to be.",
+          },
+          {
+            num: "03",
+            title: "Tech & Business",
+            desc: "Apps, entrepreneurship, the hustle of building something real. Practical, relevant, rooted in lived experience.",
+          },
+          {
+            num: "04",
+            title: "Wellness",
+            desc: "Physical, mental, and spiritual health. Fitness, mindset shifts, and the aesthetics of a life that feels good inside out.",
+          },
+        ],
+
+        // ── VIDEOS ────────────────────────────────────────────────
+        // HOW TO UPDATE VIDEOS:
+        //
+        // type: "tiktok"    → paste full TikTok URL, e.g. https://www.tiktok.com/@unam_.hii/video/7312345678901234567
+        // type: "instagram" → paste full Instagram Reel URL, e.g. https://www.instagram.com/reel/ABC123xyz/
+        // type: "file"      → put video file in same folder as this HTML, set src to filename e.g. "myvideo.mp4"
+        //
+        // To ADD more videos: copy a block and paste it below, change the values.
+        // To REMOVE a video: delete the whole { } block.
+        // title & tag are display labels shown under the video.
+
+        videos: [
+          {
+            type: "file",
+            src: "809173d1fd9e43dab7e2d5eff68d6ebf.mov", // ← replace with your actual filename
+            title: "Solo date", // ← replace with your actual title
+            tag: "Featured · Direct Upload",
+          },
+          {
+            type: "tiktok",
+            src: "https://www.tiktok.com/@unam_.hii/video/REPLACE_WITH_VIDEO_ID",
+            title: "Your TikTok title", // ← replace
+            tag: "TikTok · @unam_.hii",
+          },
+          {
+            type: "instagram",
+            src: "https://www.instagram.com/reel/REPLACE_WITH_REEL_ID/",
+            title: "Your Reel title", // ← replace
+            tag: "Instagram · @unam_.m",
+          },
+        ],
+
+        // ── COLLAB SERVICES ───────────────────────────────────────
+        services: [
+          {
+            title: "Sponsored Content",
+            desc: "Dedicated posts · integrated mentions · product features",
+          },
+          {
+            title: "UGC Creation",
+            desc: "Raw assets · brand-ready video · no posting required",
+          },
+          {
+            title: "Long-term Partnership",
+            desc: "Monthly retainer · ambassador deals · ongoing campaigns",
+          },
+          {
+            title: "Event Coverage",
+            desc: "Live posting · content capture · real-time storytelling",
+          },
+        ],
+      };
+    </script>
+    <!-- ============================================================
+  END CONFIG — don't edit below unless you know what you're doing
+  ============================================================ -->
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      :root {
+        --black: #07080a;
+        --panel: #0d0f13;
+        --surface: #12151b;
+        --border: #1a1d26;
+        --border-hi: #2a2e3d;
+        --text: #e4e6f0;
+        --muted: #50556a;
+        --dim: #2e3244;
+        --accent: #00e5ff;
+        --accent-dim: rgba(0, 229, 255, 0.07);
+        --accent-glow: rgba(0, 229, 255, 0.15);
+        --red: #ff3d6e;
+      }
+
+      body {
+        background: var(--black);
+        color: var(--text);
+        font-family: "DM Mono", monospace;
+        overflow-x: hidden;
+        cursor: crosshair;
+      }
+
+      /* Grid bg */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(0, 229, 255, 0.022) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 229, 255, 0.022) 1px, transparent 1px);
+        background-size: 56px 56px;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* Radial glow top */
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 70% 50% at 50% -5%,
+          rgba(0, 229, 255, 0.05) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* Scan line */
+      .scanline {
+        position: fixed;
+        top: -2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 229, 255, 0.25),
+          transparent
+        );
+        pointer-events: none;
+        z-index: 999;
+        animation: scan 10s linear infinite;
+      }
+      @keyframes scan {
+        to {
+          top: 100vh;
+        }
+      }
+
+      /* ── NAV ── */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        height: 58px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem;
+        border-bottom: 1px solid var(--border);
+        background: rgba(7, 8, 10, 0.93);
+        backdrop-filter: blur(12px);
+      }
+
+      .nav-logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: 0.18em;
+        color: var(--text);
+        text-decoration: none;
+        position: relative;
+      }
+      .nav-logo::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--accent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s;
+      }
+      .nav-logo:hover::after {
+        transform: scaleX(1);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        align-items: center;
+      }
+      .nav-links a {
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .nav-links a:hover {
+        color: var(--accent);
+      }
+
+      .nav-pill {
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        font-size: 0.56rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .pulse {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+        animation: blink 2s ease-in-out infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.15;
+        }
+      }
+
+      /* ── HERO ── */
+      .hero {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        border-bottom: 1px solid var(--border);
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-left {
+        padding: 110px 3rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 1px solid var(--border);
+      }
+
+      .h-eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 0.57rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 1.8rem;
+        opacity: 0;
+        animation: fromLeft 0.8s ease 0.1s forwards;
+      }
+      .h-eyebrow::before {
+        content: "";
+        width: 22px;
+        height: 1px;
+        background: var(--accent);
+      }
+
+      .h-name {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(4.5rem, 11vw, 9rem);
+        line-height: 0.87;
+        letter-spacing: 0.03em;
+        opacity: 0;
+        animation: fromLeft 0.8s ease 0.25s forwards;
+      }
+      .h-name .hollow {
+        -webkit-text-stroke: 1px var(--border-hi);
+        color: transparent;
+        display: block;
+      }
+      .h-name .solid {
+        display: block;
+      }
+      .h-name .cx {
+        color: var(--accent);
+      }
+
+      .h-sub {
+        margin-top: 2rem;
+        font-size: 0.65rem;
+        letter-spacing: 0.14em;
+        line-height: 2.1;
+        color: var(--muted);
+        max-width: 360px;
+        opacity: 0;
+        animation: fromLeft 0.8s ease 0.4s forwards;
+      }
+
+      .h-btns {
+        margin-top: 2.5rem;
+        display: flex;
+        gap: 0.9rem;
+        opacity: 0;
+        animation: fromLeft 0.8s ease 0.55s forwards;
+      }
+
+      .btn-solid {
+        padding: 0.72rem 1.8rem;
+        background: var(--accent);
+        color: var(--black);
+        font-family: "DM Mono", monospace;
+        font-size: 0.58rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+        clip-path: polygon(
+          0 0,
+          calc(100% - 8px) 0,
+          100% 8px,
+          100% 100%,
+          8px 100%,
+          0 calc(100% - 8px)
+        );
+      }
+      .btn-solid:hover {
+        background: #33eaff;
+        transform: translateY(-2px);
+      }
+
+      .btn-outline {
+        padding: 0.72rem 1.8rem;
+        border: 1px solid var(--border-hi);
+        color: var(--muted);
+        font-family: "DM Mono", monospace;
+        font-size: 0.58rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition:
+          border-color 0.2s,
+          color 0.2s;
+        clip-path: polygon(
+          0 0,
+          calc(100% - 8px) 0,
+          100% 8px,
+          100% 100%,
+          8px 100%,
+          0 calc(100% - 8px)
+        );
+      }
+      .btn-outline:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      .hero-right {
+        padding: 110px 3rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .h-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 0;
+        border-bottom: 1px solid var(--border);
+        opacity: 0;
+        animation: fadeIn 0.6s ease forwards;
+      }
+      .h-row:nth-child(1) {
+        animation-delay: 0.3s;
+      }
+      .h-row:nth-child(2) {
+        animation-delay: 0.42s;
+      }
+      .h-row:nth-child(3) {
+        animation-delay: 0.54s;
+      }
+      .h-row:nth-child(4) {
+        animation-delay: 0.66s;
+      }
+      .h-row:nth-child(5) {
+        animation-delay: 0.78s;
+      }
+      .h-row:nth-child(6) {
+        animation-delay: 0.9s;
+      }
+
+      .h-row-label {
+        font-size: 0.56rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .h-row-val {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.08em;
+        color: var(--text);
+        text-decoration: none;
+      }
+      .h-row-val.cyan {
+        color: var(--accent);
+      }
+      .h-row-val:hover.cyan {
+        opacity: 0.8;
+      }
+
+      /* ── SECTION WRAPPER ── */
+      .sw {
+        position: relative;
+        z-index: 1;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .sh {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        border-bottom: 1px solid var(--border);
+        background: var(--panel);
+      }
+      .sh-l {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+      }
+      .sh-idx {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 0.82rem;
+        letter-spacing: 0.15em;
+        color: var(--accent);
+      }
+      .sh-ttl {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .sh-r {
+        font-size: 0.53rem;
+        letter-spacing: 0.18em;
+        color: var(--dim);
+        text-transform: uppercase;
+      }
+
+      /* ── ABOUT ── */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-l {
+        padding: 4.5rem 3rem;
+        border-right: 1px solid var(--border);
+      }
+      .about-r {
+        padding: 4.5rem 3rem;
+      }
+
+      .big-stmt {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.8rem, 5.5vw, 5rem);
+        line-height: 0.93;
+        letter-spacing: 0.02em;
+        margin-bottom: 2.5rem;
+      }
+      .big-stmt .h {
+        -webkit-text-stroke: 1px var(--border-hi);
+        color: transparent;
+        display: block;
+      }
+      .big-stmt .cx {
+        color: var(--accent);
+        display: block;
+      }
+
+      .about-body {
+        font-size: 0.76rem;
+        line-height: 2;
+        color: var(--muted);
+        margin-bottom: 2.5rem;
+      }
+      .about-body strong {
+        color: var(--text);
+      }
+
+      .data-tbl {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .data-tbl tr {
+        border-top: 1px solid var(--border);
+      }
+      .data-tbl td {
+        padding: 0.72rem 0;
+        font-size: 0.61rem;
+        letter-spacing: 0.09em;
+      }
+      .data-tbl td:first-child {
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        width: 38%;
+      }
+
+      .quote-block {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--accent);
+        padding: 2.2rem;
+        margin-bottom: 2rem;
+        clip-path: polygon(
+          0 0,
+          calc(100% - 14px) 0,
+          100% 14px,
+          100% 100%,
+          0 100%
+        );
+      }
+      .q-mark {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3.5rem;
+        line-height: 0.8;
+        color: var(--accent);
+        opacity: 0.25;
+      }
+      .q-text {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.5;
+        color: var(--text);
+        letter-spacing: 0.02em;
+      }
+
+      .mini-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background: var(--border);
+      }
+      .mini-box {
+        background: var(--surface);
+        padding: 1.8rem;
+        transition: background 0.2s;
+      }
+      .mini-box:hover {
+        background: #14171f;
+      }
+      .mini-num {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(1.6rem, 3vw, 2.5rem);
+        line-height: 1;
+        color: var(--accent);
+        letter-spacing: 0.04em;
+        margin-bottom: 0.4rem;
+      }
+      .mini-lbl {
+        font-size: 0.56rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      /* ── STATS ── */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--border);
+      }
+
+      .stat-box {
+        background: var(--panel);
+        padding: 3rem 2rem;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.25s;
+      }
+      .stat-box:hover {
+        background: var(--surface);
+      }
+      .stat-box::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 2rem;
+        right: 2rem;
+        height: 1px;
+        background: linear-gradient(90deg, var(--accent), transparent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.35s;
+      }
+      .stat-box:hover::after {
+        transform: scaleX(1);
+      }
+
+      .s-platform {
+        font-size: 0.52rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.7rem;
+      }
+      .s-num {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(1.8rem, 2.8vw, 3rem);
+        line-height: 1;
+        color: var(--text);
+        letter-spacing: 0.03em;
+      }
+      .s-lbl {
+        margin-top: 0.5rem;
+        font-size: 0.57rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .s-geo {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--border-hi);
+        opacity: 0.45;
+      }
+      .stat-box:nth-child(1) .s-geo {
+        border-radius: 50%;
+      }
+      .stat-box:nth-child(2) .s-geo {
+        transform: rotate(45deg);
+      }
+      .stat-box:nth-child(3) .s-geo {
+        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      }
+      .stat-box:nth-child(4) .s-geo {
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      }
+      .stat-box:nth-child(5) .s-geo {
+        border-radius: 50%;
+      }
+      .stat-box:nth-child(6) .s-geo {
+        transform: rotate(45deg);
+      }
+      .stat-box:nth-child(7) .s-geo {
+        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      }
+      .stat-box:nth-child(8) .s-geo {
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      }
+
+      /* ── PILLARS ── */
+      .pillars-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--border);
+      }
+
+      .pillar {
+        background: var(--panel);
+        padding: 2.8rem 2.2rem;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.3s;
+      }
+      .pillar:hover {
+        background: var(--surface);
+      }
+      .pillar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--accent), transparent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s;
+      }
+      .pillar:hover::before {
+        transform: scaleX(1);
+      }
+
+      .p-geo {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 1.8rem;
+        border: 1px solid var(--border-hi);
+        transition: border-color 0.3s;
+      }
+      .pillar:hover .p-geo {
+        border-color: var(--accent);
+      }
+      .pillar:nth-child(1) .p-geo {
+        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        background: var(--accent-dim);
+      }
+      .pillar:nth-child(2) .p-geo {
+        border-radius: 50%;
+        background: var(--accent-dim);
+      }
+      .pillar:nth-child(3) .p-geo {
+        transform: rotate(45deg);
+        background: var(--accent-dim);
+      }
+      .pillar:nth-child(4) .p-geo {
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background: var(--accent-dim);
+      }
+
+      .p-idx {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.8rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3.5rem;
+        color: var(--dim);
+        line-height: 1;
+        transition: color 0.3s;
+      }
+      .pillar:hover .p-idx {
+        color: rgba(0, 229, 255, 0.12);
+      }
+
+      .p-title {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin-bottom: 0.9rem;
+      }
+      .p-desc {
+        font-size: 0.68rem;
+        line-height: 1.8;
+        color: var(--muted);
+      }
+
+      /* ── VIDEO SECTION ── */
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+      }
+
+      .v-card {
+        background: var(--panel);
+      }
+
+      /* 9:16 ratio wrapper */
+      .v-ratio {
+        position: relative;
+        width: 100%;
+        padding-top: 177.78%;
+        background: var(--surface);
+        overflow: hidden;
+      }
+      .v-ratio iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* ── CUSTOM VIDEO PLAYER ── */
+      .player-wrap {
+        position: absolute;
+        inset: 0;
+      }
+
+      .player-wrap video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        background: var(--black);
+      }
+
+      /* Overlay — shown before play */
+      .player-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(7, 8, 10, 0.55);
+        transition: opacity 0.3s;
+        cursor: pointer;
+      }
+      .player-overlay.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .big-play {
+        width: 68px;
+        height: 68px;
+        border: 2px solid var(--accent);
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        background: rgba(0, 229, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+          background 0.2s,
+          transform 0.2s;
+      }
+      .big-play:hover {
+        background: rgba(0, 229, 255, 0.18);
+        transform: scale(1.06);
+      }
+      .big-play::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 0 12px 22px;
+        border-color: transparent transparent transparent var(--accent);
+        margin-left: 5px;
+      }
+      .overlay-label {
+        margin-top: 1rem;
+        font-size: 0.58rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      /* Controls bar */
+      .player-controls {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0.6rem 0.8rem;
+        background: linear-gradient(
+          to top,
+          rgba(7, 8, 10, 0.92) 0%,
+          transparent 100%
+        );
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      .player-wrap:hover .player-controls {
+        opacity: 1;
+      }
+      .player-wrap.playing .player-controls {
+        opacity: 1;
+      }
+
+      .ctrl-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text);
+        padding: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.15s;
+        flex-shrink: 0;
+      }
+      .ctrl-btn:hover {
+        color: var(--accent);
+      }
+
+      /* SVG icons */
+      .ico {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+        display: block;
+      }
+
+      /* Progress bar */
+      .progress-wrap {
+        flex: 1;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.15);
+        cursor: pointer;
+        position: relative;
+        border-radius: 2px;
+      }
+      .progress-fill {
+        height: 100%;
+        background: var(--accent);
+        border-radius: 2px;
+        width: 0%;
+        transition: width 0.1s linear;
+        pointer-events: none;
+      }
+      .progress-wrap:hover .progress-fill {
+        background: #33eaff;
+      }
+
+      /* Volume */
+      .vol-wrap {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .vol-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 52px;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.15);
+        outline: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      .vol-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--accent);
+        cursor: pointer;
+      }
+      .vol-slider::-moz-range-thumb {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: none;
+        cursor: pointer;
+      }
+
+      .time-label {
+        font-size: 0.5rem;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      /* Embed placeholder (TikTok/IG not yet configured) */
+      .embed-ph {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        cursor: pointer;
+        background: var(--surface);
+        transition: background 0.2s;
+      }
+      .embed-ph:hover {
+        background: #111418;
+      }
+      .embed-ph:hover .ph-hex {
+        border-color: var(--accent);
+      }
+      .embed-ph:hover .ph-hex::after {
+        border-color: transparent transparent transparent var(--accent);
+      }
+      .embed-ph:hover .ph-lbl {
+        color: var(--accent);
+      }
+
+      .ph-hex {
+        width: 52px;
+        height: 52px;
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        background: var(--panel);
+        border: 1px solid var(--border-hi);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 0.2s;
+      }
+      .ph-hex::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 0 8px 15px;
+        border-color: transparent transparent transparent var(--border-hi);
+        margin-left: 3px;
+        transition: border-color 0.2s;
+      }
+      .ph-lbl {
+        font-size: 0.56rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-align: center;
+        transition: color 0.2s;
+      }
+
+      /* Video meta */
+      .v-meta {
+        padding: 1.2rem 1.8rem;
+        border-top: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .v-tag {
+        font-size: 0.54rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.3rem;
+      }
+      .v-title {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--text);
+        letter-spacing: 0.04em;
+      }
+      .v-arrow {
+        font-size: 0.75rem;
+        color: var(--muted);
+        text-decoration: none;
+      }
+      .v-arrow:hover {
+        color: var(--accent);
+      }
+
+      /* ── COLLAB ── */
+      .collab-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .collab-l {
+        padding: 5rem 3rem;
+        border-right: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .collab-r {
+        padding: 5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .collab-title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(3.2rem, 6.5vw, 6.5rem);
+        line-height: 0.88;
+        letter-spacing: 0.03em;
+        margin-bottom: 2rem;
+      }
+      .ct-1 {
+        display: block;
+        color: var(--text);
+      }
+      .ct-2 {
+        display: block;
+        -webkit-text-stroke: 1px var(--border-hi);
+        color: transparent;
+      }
+      .ct-3 {
+        display: block;
+        color: var(--accent);
+      }
+
+      .collab-body {
+        font-size: 0.7rem;
+        line-height: 2;
+        color: var(--muted);
+        max-width: 360px;
+        margin-bottom: 2.5rem;
+      }
+
+      .c-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        max-width: 270px;
+      }
+      .c-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.95rem 1.4rem;
+        border: 1px solid var(--border);
+        background: var(--panel);
+        font-family: "DM Mono", monospace;
+        font-size: 0.58rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-decoration: none;
+        transition:
+          border-color 0.2s,
+          color 0.2s,
+          background 0.2s;
+        clip-path: polygon(
+          0 0,
+          calc(100% - 9px) 0,
+          100% 9px,
+          100% 100%,
+          9px 100%,
+          0 calc(100% - 9px)
+        );
+      }
+      .c-btn:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: var(--accent-dim);
+      }
+
+      .svc-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.4rem 0;
+        border-bottom: 1px solid var(--border);
+        transition: padding-left 0.25s;
+        cursor: default;
+      }
+      .svc-row:hover {
+        padding-left: 0.5rem;
+      }
+      .svc-row:hover .svc-title {
+        color: var(--accent);
+      }
+      .svc-row:hover .svc-arr {
+        color: var(--accent);
+      }
+
+      .svc-n {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 0.85rem;
+        color: var(--dim);
+        margin-right: 1.2rem;
+        letter-spacing: 0.1em;
+      }
+      .svc-info {
+        flex: 1;
+      }
+      .svc-title {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text);
+        transition: color 0.2s;
+        margin-bottom: 0.2rem;
+      }
+      .svc-desc {
+        font-size: 0.57rem;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+      }
+      .svc-arr {
+        color: var(--dim);
+        font-size: 0.75rem;
+        transition: color 0.2s;
+      }
+
+      /* ── FOOTER ── */
+      footer {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.4rem 3rem;
+        border-top: 1px solid var(--border);
+        background: var(--panel);
+      }
+      .f-logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: 0.18em;
+        color: var(--text);
+      }
+      .f-info {
+        display: flex;
+        gap: 1.8rem;
+        align-items: center;
+      }
+      .f-info span {
+        font-size: 0.54rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--dim);
+      }
+      .f-info .cx {
+        color: var(--accent);
+      }
+
+      /* ── ANIMATIONS ── */
+      @keyframes fromLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 900px) {
+        nav {
+          padding: 0 1.5rem;
+        }
+        .nav-links {
+          display: none;
+        }
+        .hero,
+        .about-grid,
+        .collab-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-left,
+        .hero-right,
+        .about-l,
+        .about-r,
+        .collab-l,
+        .collab-r {
+          padding: 3rem 1.5rem;
+          border-right: none;
+        }
+        .stats-grid,
+        .pillars-grid,
+        .video-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .sh {
+          padding: 0.9rem 1.5rem;
+        }
+        footer {
+          padding: 1.5rem;
+          flex-direction: column;
+          gap: 0.8rem;
+          text-align: center;
+        }
+        .f-info {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+      @media (max-width: 500px) {
+        .stats-grid,
+        .video-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scanline"></div>
+
+    <!-- NAV (rendered by JS) -->
+    <nav id="nav-root"></nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="h-eyebrow">Content Creator · Johannesburg ZA</p>
+        <h1 class="h-name">
+          <span class="hollow">CONTENT</span>
+          <span class="solid">CR<span class="cx">E</span>ATOR</span>
+        </h1>
+        <p class="h-sub" id="hero-sub"></p>
+        <div class="h-btns">
+          <a href="#collab" class="btn-solid">Work With Me</a>
+          <a href="#content" class="btn-outline">View Content</a>
+        </div>
+      </div>
+      <div class="hero-right" id="hero-right"></div>
+    </section>
+
+    <!-- 01 ABOUT -->
+    <div class="sw" id="about">
+      <div class="sh">
+        <div class="sh-l">
+          <span class="sh-idx">01</span><span class="sh-ttl">About</span>
+        </div>
+        <span class="sh-r">Creator Profile</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-l reveal">
+          <h2 class="big-stmt">
+            <span>BUILDING</span>
+            <span class="h">IN</span>
+            <span class="cx">PUBLIC.</span>
+          </h2>
+          <p class="about-body">
+            I'm <strong>Unam</strong> — a 21-year-old creator, entrepreneur and
+            strategist from Johannesburg. My content isn't just lifestyle. It's
+            a <strong>live document</strong> of what it looks like to build
+            something from scratch with discipline, faith, and intention.<br /><br />
+            Whether I'm breaking down a business concept, sharing a morning
+            routine, or just living — everything I put out is rooted in
+            something real. My audience doesn't just watch. They
+            <strong>relate</strong>.
+          </p>
+          <table class="data-tbl">
+            <tr>
+              <td>Base</td>
+              <td>Johannesburg, South Africa</td>
+            </tr>
+            <tr>
+              <td>Platforms</td>
+              <td>TikTok · Instagram</td>
+            </tr>
+            <tr>
+              <td>Niche</td>
+              <td>Lifestyle · Faith · Tech · Wellness</td>
+            </tr>
+            <tr>
+              <td>Open for</td>
+              <td>Brand Deals · Collabs · UGC</td>
+            </tr>
+            <tr>
+              <td>Studying</td>
+              <td>Business Management · UJ 2027</td>
+            </tr>
+          </table>
+        </div>
+        <div class="about-r reveal">
+          <div class="quote-block">
+            <div class="q-mark">"</div>
+            <p class="q-text">
+              I don't create content to go viral. I create content to build
+              something that lasts.
+            </p>
+          </div>
+          <div class="mini-grid" id="mini-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 STATS -->
+    <div class="sw" id="stats">
+      <div class="sh">
+        <div class="sh-l">
+          <span class="sh-idx">02</span><span class="sh-ttl">Social Proof</span>
+        </div>
+        <span class="sh-r">Verified Analytics</span>
+      </div>
+      <div class="stats-grid" id="stats-grid"></div>
+    </div>
+
+    <!-- 03 PILLARS -->
+    <div class="sw" id="pillars">
+      <div class="sh">
+        <div class="sh-l">
+          <span class="sh-idx">03</span
+          ><span class="sh-ttl">Content Pillars</span>
+        </div>
+        <span class="sh-r">What I Stand For</span>
+      </div>
+      <div class="pillars-grid" id="pillars-grid"></div>
+    </div>
+
+    <!-- 04 CONTENT -->
+    <div class="sw" id="content">
+      <div class="sh">
+        <div class="sh-l">
+          <span class="sh-idx">04</span
+          ><span class="sh-ttl">Featured Content</span>
+        </div>
+        <span class="sh-r">Click to play</span>
+      </div>
+      <div class="video-grid" id="video-grid"></div>
+    </div>
+
+    <!-- 05 COLLAB -->
+    <div class="sw" id="collab">
+      <div class="sh">
+        <div class="sh-l">
+          <span class="sh-idx">05</span><span class="sh-ttl">Collaborate</span>
+        </div>
+        <span class="sh-r">Let's build</span>
+      </div>
+      <div class="collab-grid">
+        <div class="collab-l reveal">
+          <h2 class="collab-title">
+            <span class="ct-1">READY</span>
+            <span class="ct-2">TO</span>
+            <span class="ct-3">COLLAB?</span>
+          </h2>
+          <p class="collab-body">
+            Whether it's a brand deal, UGC campaign, or a long-term partnership
+            — I create content that resonates with a young, intentional South
+            African audience.
+          </p>
+          <div class="c-btns" id="c-btns"></div>
+        </div>
+        <div class="collab-r reveal" id="svc-list"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <span class="f-logo">UNAM</span>
+      <div class="f-info" id="footer-info"></div>
+    </footer>
+
+    <!-- ============================================================
+  RENDER ENGINE — builds the page from CONFIG
+  ============================================================ -->
+    <script>
+      (function () {
+        /* ── NAV ── */
+        document.getElementById("nav-root").innerHTML = `
+    <a class="nav-logo" href="#">UNAM</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#pillars">Pillars</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#collab">Collab</a></li>
+    </ul>
+    <div class="nav-pill"><div class="pulse"></div>Available for deals</div>`;
+
+        /* ── HERO ── */
+        document.getElementById("hero-sub").textContent =
+          CONFIG.tagline +
+          "\nBuilding in public for a generation that moves with intention.";
+
+        document.getElementById("hero-right").innerHTML = `
+    <div class="h-row"><span class="h-row-label">TikTok</span>
+      <a href="${CONFIG.tiktok.url}" target="_blank" class="h-row-val cyan">${CONFIG.tiktok.handle}</a></div>
+    <div class="h-row"><span class="h-row-label">Instagram</span>
+      <a href="${CONFIG.instagram.url}" target="_blank" class="h-row-val cyan">${CONFIG.instagram.handle}</a></div>
+    <div class="h-row"><span class="h-row-label">Location</span><span class="h-row-val">${CONFIG.location}</span></div>
+    <div class="h-row"><span class="h-row-label">TT Followers</span><span class="h-row-val">${CONFIG.stats[0].value}</span></div>
+    <div class="h-row"><span class="h-row-label">IG Followers</span><span class="h-row-val">${CONFIG.stats[4].value}</span></div>
+    <div class="h-row"><span class="h-row-label">Status</span><span class="h-row-val cyan">OPEN</span></div>`;
+
+        /* ── ABOUT MINI GRID ── */
+        const miniData = [
+          { num: CONFIG.stats[0].value, lbl: "TikTok Followers" },
+          { num: CONFIG.stats[3].value, lbl: "TT Eng. Rate" },
+          { num: CONFIG.stats[4].value, lbl: "IG Followers" },
+          { num: CONFIG.stats[7].value, lbl: "IG Eng. Rate" },
+        ];
+        document.getElementById("mini-grid").innerHTML = miniData
+          .map(
+            (d) =>
+              `<div class="mini-box reveal"><div class="mini-num">${d.num}</div><div class="mini-lbl">${d.lbl}</div></div>`,
+          )
+          .join("");
+
+        /* ── STATS ── */
+        document.getElementById("stats-grid").innerHTML = CONFIG.stats
+          .map(
+            (s) => `
+      <div class="stat-box reveal">
+        <div class="s-geo"></div>
+        <div class="s-platform">${s.platform}</div>
+        <div class="s-num">${s.value}</div>
+        <div class="s-lbl">${s.label}</div>
+      </div>`,
+          )
+          .join("");
+
+        /* ── PILLARS ── */
+        document.getElementById("pillars-grid").innerHTML = CONFIG.pillars
+          .map(
+            (p) => `
+      <div class="pillar reveal">
+        <div class="p-idx">${p.num}</div>
+        <div class="p-geo"></div>
+        <div class="p-title">${p.title}</div>
+        <p class="p-desc">${p.desc}</p>
+      </div>`,
+          )
+          .join("");
+
+        /* ── VIDEOS ── */
+        function makePlayer(v, idx) {
+          if (v.type === "file") {
+            // Custom HTML5 player
+            return `
+        <div class="v-ratio">
+          <div class="player-wrap" id="pw${idx}">
+            <video id="vid${idx}" src="${v.src}" preload="metadata"></video>
+            <div class="player-overlay" id="ov${idx}">
+              <div class="big-play" onclick="startPlay(${idx})"></div>
+              <span class="overlay-label">Play</span>
+            </div>
+            <div class="player-controls">
+              <button class="ctrl-btn" onclick="togglePlay(${idx})" title="Play/Pause" id="ppbtn${idx}">
+                <svg class="ico" id="ppico${idx}" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              <div class="progress-wrap" id="prog${idx}" onclick="seekVideo(event,${idx})">
+                <div class="progress-fill" id="fill${idx}"></div>
+              </div>
+              <span class="time-label" id="time${idx}">0:00</span>
+              <div class="vol-wrap">
+                <button class="ctrl-btn" onclick="toggleMute(${idx})" title="Mute" id="mutebtn${idx}">
+                  <svg class="ico" id="muteico${idx}" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0013 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                </button>
+                <input class="vol-slider" id="vol${idx}" type="range" min="0" max="1" step="0.05" value="1"
+                  oninput="setVolume(event,${idx})">
+              </div>
+            </div>
+          </div>
+        </div>`;
+          }
+
+          // TikTok
+          if (v.type === "tiktok") {
+            const m = v.src.match(/video\/(\d+)/);
+            if (m) {
+              return `<div class="v-ratio"><iframe src="https://www.tiktok.com/embed/v2/${m[1]}" allowfullscreen allow="encrypted-media"></iframe></div>`;
+            }
+            // Not configured yet
+            return `<div class="v-ratio"><div class="embed-ph" onclick="window.open('${CONFIG.tiktok.url}','_blank')">
+        <div class="ph-hex"></div><p class="ph-lbl">TikTok<br><span style="color:var(--accent)">${CONFIG.tiktok.handle}</span></p>
+      </div></div>`;
+          }
+
+          // Instagram
+          if (v.type === "instagram") {
+            const m = v.src.match(/\/(reel|p)\/([A-Za-z0-9_\-]+)/);
+            if (m) {
+              return `<div class="v-ratio"><iframe src="https://www.instagram.com/p/${m[2]}/embed/" allowfullscreen allow="encrypted-media"></iframe></div>`;
+            }
+            return `<div class="v-ratio"><div class="embed-ph" onclick="window.open('https://www.instagram.com/unam_.m/','_blank')">
+        <div class="ph-hex"></div><p class="ph-lbl">Instagram Reel<br><span style="color:var(--accent)">${CONFIG.instagram.handle}</span></p>
+      </div></div>`;
+          }
+        }
+
+        document.getElementById("video-grid").innerHTML = CONFIG.videos
+          .map(
+            (v, i) => `
+      <div class="v-card reveal">
+        ${makePlayer(v, i)}
+        <div class="v-meta">
+          <div>
+            <div class="v-tag">${v.tag}</div>
+          </div>
+          ${
+            v.type === "tiktok"
+              ? `<a href="${CONFIG.tiktok.url}"    target="_blank" class="v-arrow">↗</a>`
+              : v.type === "instagram"
+                ? `<a href="https://www.instagram.com/unam_.m/" target="_blank" class="v-arrow">↗</a>`
+                : '<span class="v-arrow">▶</span>'
+          }
+        </div>
+      </div>`,
+          )
+          .join("");
+
+        /* ── COLLAB BUTTONS ── */
+        document.getElementById("c-btns").innerHTML = `
+    <a href="mailto:${CONFIG.email}" class="c-btn">Send an Email <span>→</span></a>
+    <a href="${CONFIG.tiktok.url}" target="_blank" class="c-btn">TikTok · ${CONFIG.tiktok.handle} <span>↗</span></a>
+    <a href="https://www.instagram.com/unam_.m/" target="_blank" class="c-btn">Instagram · ${CONFIG.instagram.handle} <span>↗</span></a>`;
+
+        /* ── SERVICES ── */
+        document.getElementById("svc-list").innerHTML = CONFIG.services
+          .map(
+            (s, i) => `
+      <div class="svc-row">
+        <span class="svc-n">0${i + 1}</span>
+        <div class="svc-info"><div class="svc-title">${s.title}</div><div class="svc-desc">${s.desc}</div></div>
+        <span class="svc-arr">→</span>
+      </div>`,
+          )
+          .join("");
+
+        /* ── FOOTER ── */
+        document.getElementById("footer-info").innerHTML = `
+    <span>${CONFIG.location}</span><span>·</span>
+    <span class="cx">Available for deals</span><span>·</span>
+    <span>© 2026</span>`;
+
+        /* ── SCROLL REVEAL ── */
+        const obs = new IntersectionObserver(
+          (es) => {
+            es.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                obs.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.08 },
+        );
+        setTimeout(
+          () =>
+            document
+              .querySelectorAll(".reveal")
+              .forEach((el) => obs.observe(el)),
+          100,
+        );
+      })();
+
+      /* ── VIDEO PLAYER CONTROLS ── */
+
+      function fmt(s) {
+        const m = Math.floor(s / 60);
+        const ss = Math.floor(s % 60);
+        return m + ":" + (ss < 10 ? "0" : "") + ss;
+      }
+
+      function startPlay(idx) {
+        const vid = document.getElementById("vid" + idx);
+        const ov = document.getElementById("ov" + idx);
+        const pw = document.getElementById("pw" + idx);
+        ov.classList.add("hidden");
+        pw.classList.add("playing");
+        vid.play();
+        updatePPIcon(idx, true);
+      }
+
+      function togglePlay(idx) {
+        const vid = document.getElementById("vid" + idx);
+        const pw = document.getElementById("pw" + idx);
+        const ov = document.getElementById("ov" + idx);
+        if (vid.paused) {
+          ov.classList.add("hidden");
+          pw.classList.add("playing");
+          vid.play();
+          updatePPIcon(idx, true);
+        } else {
+          vid.pause();
+          pw.classList.remove("playing");
+          updatePPIcon(idx, false);
+        }
+      }
+
+      function updatePPIcon(idx, playing) {
+        document.getElementById("ppico" + idx).innerHTML = playing
+          ? '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>' // pause icon
+          : '<path d="M8 5v14l11-7z"/>'; // play icon
+      }
+
+      function seekVideo(e, idx) {
+        const bar = document.getElementById("prog" + idx);
+        const vid = document.getElementById("vid" + idx);
+        const rect = bar.getBoundingClientRect();
+        const pct = Math.max(
+          0,
+          Math.min(1, (e.clientX - rect.left) / rect.width),
+        );
+        vid.currentTime = pct * vid.duration;
+      }
+
+      function setVolume(e, idx) {
+        const vid = document.getElementById("vid" + idx);
+        vid.volume = parseFloat(e.target.value);
+        if (vid.volume === 0) {
+          setMuteIcon(idx, true);
+        } else {
+          setMuteIcon(idx, false);
+        }
+      }
+
+      function toggleMute(idx) {
+        const vid = document.getElementById("vid" + idx);
+        vid.muted = !vid.muted;
+        const slider = document.getElementById("vol" + idx);
+        if (vid.muted) {
+          slider.value = 0;
+          setMuteIcon(idx, true);
+        } else {
+          slider.value = vid.volume;
+          setMuteIcon(idx, false);
+        }
+      }
+
+      function setMuteIcon(idx, muted) {
+        document.getElementById("muteico" + idx).innerHTML = muted
+          ? '<path d="M16.5 12A4.5 4.5 0 0013 7.97v2.21l3.45 3.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06A8.99 8.99 0 0017.22 19l2 2L20.73 19.73 4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>'
+          : '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0013 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>';
+      }
+
+      /* Progress + time update loop */
+      function bindVideoEvents(idx) {
+        const vid = document.getElementById("vid" + idx);
+        if (!vid) return;
+        vid.addEventListener("timeupdate", () => {
+          if (!vid.duration) return;
+          const pct = (vid.currentTime / vid.duration) * 100;
+          document.getElementById("fill" + idx).style.width = pct + "%";
+          document.getElementById("time" + idx).textContent =
+            fmt(vid.currentTime) + " / " + fmt(vid.duration);
+        });
+        vid.addEventListener("ended", () => {
+          document.getElementById("ov" + idx).classList.remove("hidden");
+          document.getElementById("pw" + idx).classList.remove("playing");
+          updatePPIcon(idx, false);
+        });
+        vid.addEventListener("error", () => {
+          const pw = document.getElementById("pw" + idx);
+          if (pw)
+            pw.innerHTML = `<div class="embed-ph"><div class="ph-hex"></div><p class="ph-lbl">Add video file<br><span style="color:var(--muted);font-size:0.5rem">See CONFIG at top</span></p></div>`;
+        });
+      }
+
+      // Bind after DOM renders
+      CONFIG.videos.forEach((v, i) => {
+        if (v.type === "file") bindVideoEvents(i);
+      });
+    </script>
+  </body>
+</html>
